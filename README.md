@@ -8,6 +8,7 @@ Emi is a WordPress starter theme package that has been automated to include a ge
 
 ```
 $ npm install -g yo
+```
 
 #### Install Gulp
 
