@@ -6,7 +6,7 @@ var util	= require('util'),
 	chalk	= require('chalk'),
 	art		= require('../util/art');
 
-var EmiGenerator = yeoman.generators.Base.extend({
+var UnderscoresGenerator = yeoman.generators.Base.extend({
   init: function () {
     this.pkg = require('../package.json');
 
@@ -30,8 +30,8 @@ var EmiGenerator = yeoman.generators.Base.extend({
 	self 	= this
 	
 	this.log.writeln(chalk.yellow(art.emi));
-	this.log.writeln(chalk.yellow('\n\nLet\'s grab the latest version of Emi...\n\n'));
-	this.tarball('https://github.com/zoerooney/Emi/archive/master.tar.gz', '.', cb);
+	this.log.writeln(chalk.yellow('\n\nLet\'s grab the latest version of _s...\n\n'));
+	this.tarball('https://github.com/fainder/_s/archive/fainder.tar.gz', '.', cb);
 	this.log.writeln(chalk.yellow('\n\nGot it!\n\n'));
   },
   askFor: function () {
@@ -45,17 +45,17 @@ var EmiGenerator = yeoman.generators.Base.extend({
     var prompts = [{
         name: 'themeName',
         message: 'What do you want to name your theme?',
+        default: function( answers ) {
+          return '_s';
+        }
       },{
         name: 'themeAuthor',
         message: 'Who is the theme author?',
-        default: function( answers ) {
-  	      return 'Zoe Rooney Web Development';
-  	    }
       },{
         name: 'themeAuthorURI',
         message: 'What\'s their website URL (the author)?',
         default: function( answers ) {
-  	      return 'http://www.zoerooney.com';
+  	      return 'http://underscores.me/';
   	  }
       },{
         name: 'themeURI',
@@ -64,7 +64,7 @@ var EmiGenerator = yeoman.generators.Base.extend({
         name: 'themeDescription',
         message: 'Please briefly describe this theme.',
         default: function( answers ) {
-       	 return answers.themeName+' custom theme';
+       	 return answers.themeName+' based theme';
         }
       }, {
         name: 'themeDesigner',
@@ -87,7 +87,7 @@ var EmiGenerator = yeoman.generators.Base.extend({
       this.themeHandle		= props.themeName.trim().replace(/ /g,'_');
       this.themeFunction	= props.themeName.toLowerCase().trim().replace(/ /g,'_');
       this.themeTextDomain	= props.themeName.toLowerCase().trim().replace(/ /g,'-');
-	  this.themeAuthor		= props.themeAuthor;
+	    this.themeAuthor		= props.themeAuthor;
       this.themeAuthorURI	= props.themeAuthorURI;
       this.themeURI			= props.themeURI;
       this.themeDescription = props.themeDescription;
@@ -139,4 +139,4 @@ var EmiGenerator = yeoman.generators.Base.extend({
   }
   
 });
-module.exports = EmiGenerator;
+module.exports = UnderscoresGenerator;

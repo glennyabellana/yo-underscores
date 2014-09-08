@@ -36,22 +36,17 @@ $ sudo npm install -g gulp
 You can install the Emi generator using the command:
 
 ```
-$ npm install -g generator-emi
+$ npm install -g generator-underscores
 ```
 
 Then, you should be able to initiate the generator (you'll want to do this within an empty directory you create for your new theme):
 
 ```
-$ yo emi
+$ yo underscores
 ```
 
 ## Changelog
-2.0.4 Run `gulp styles` at end of generator to create working `style.css`  
-2.0.3 Fix package.json so other subdirectories are downloaded
-2.0.2 Update installation directions  
-2.0.1 Improve description  
-2.0.0 Pulls Emi from the theme's repo  
-1.0.0 Initial release
+0.0.1 Initial pre-release
 
 
 ## License
