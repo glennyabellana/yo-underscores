@@ -1,7 +1,7 @@
 {
   "name": "generator-underscores",
-  "version": "0.0.4",
-  "description": "Forked from zoerooney/yo-emi. Use Yeoman to generate a clean, Sass and Gulp-ready WordPress _s theme",
+  "version": "0.0.9",
+  "description": "Forked from zoerooney/yo-emi.\nUse Yeoman to generate a clean, Sass and Gulp-ready WordPress _s theme",
   "license": "MIT",
   "homepage": "https://github.com/fainder/yo-underscores",
   "bugs": {
@@ -12,11 +12,7 @@
     "type": "git",
     "url": "git://github.com/fainder/yo-underscores.git"
   },
-  "author": {
-    "name": "Chee",
-    "email": "chee@fainder.info",
-    "url": "http://github.com/fainder"
-  },
+  "author": "Chee <chee@fainder.info> (http://github.com/fainder)",
   "engines": {
     "node": ">=0.10.0",
     "npm": ">=1.2.10"
@@ -49,10 +45,9 @@
   "peerDependencies": {
     "yo": ">=1.0.0"
   },
-  "readme": "## Emi, an automated WordPress Starter Theme\n\nEmi is a WordPress starter theme package that has been automated to include a generator (using [Yeoman](http://yeoman.io)). The generated themes is set up with Sass and [Gulp.js](gulpjs.com) for further automation.\n\n## Getting Started\n\n### Install Yeoman\n\nIf you don't already have Yeoman installed, you'll need to take care of that:\n\n```\n$ npm install -g yo\n```\n\nOr, if you get errors related to permissions, try:\n\n```\n$ sudo npm install -g yo\n```\n\n#### Install Gulp\n\nIf you don't already have [Gulp](http://gulpjs.com/) installed, go ahead and install it too:\n```\n$ npm install -g gulp\n```\nOr, if you get errors related to permissions, try:\n\n```\n$ sudo npm install -g gulp\n```\n\n### Install Emi\n\n\nYou can install the Emi generator using the command:\n\n```\n$ npm install -g generator-underscores\n```\n\nThen, you should be able to initiate the generator (you'll want to do this within an empty directory you create for your new theme):\n\n```\n$ yo underscores\n```\n\n## Changelog\n0.0.1 Initial pre-release\n\n\n## License\n\nMIT\n",
-  "readmeFilename": "README.md",
-  "gitHead": "29453fd5c849c83306f9f04cff5bd28c512aac0d",
-  "_id": "generator-underscores@0.0.4",
   "_shasum": "aefc1dd1fd6a6a4070fa0d501b01b6bd65e2cc45",
-  "_from": "generator-underscores@"
+  "_from": "generator-underscores@",
+  "directories": {
+    "test": "test"
+  }
 }
