@@ -1,4 +1,4 @@
-## yo-ynderscores, an automated WordPress Starter _s Theme
+## yo-underscores, an automated WordPress Starter _s Theme
 
 Emi is a WordPress starter theme package that has been automated to include a generator (using [Yeoman](http://yeoman.io)). The generated themes is set up with Sass and [Gulp.js](gulpjs.com) for further automation.
 
